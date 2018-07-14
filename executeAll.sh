@@ -15,13 +15,7 @@ echo '***** Homebrew *****'
 chmod u+x ./homebrew/homebrewinstall.sh
 ./homebrew/homebrewinstall.sh
 
-echo '***** Github *****'
-chmod u+x ./github/githubInstall.sh
-./github/githubInstall.sh
-
 # modiftying iterm and terminal
 echo '***** Terminal *****'
-
-for scripts in ./terminal/*.sh; do
-  echo $scripts
-done
+chmod u+x ./termterminalInstallinal/terminalInstall.sh
+./terminal/terminalInstall.sh
