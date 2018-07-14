@@ -19,17 +19,16 @@ brew install zsh
 # zsh setup
 touch ~/.zshrc
 echo "alias ls='ls -G'" >> ~/.zshrc
+echo "-----EXPORT-----" >> ~/.zshrc
+echo "export PATH=/usr/local/bin:$PATH" >> ~/.zshrc
 
 # PowerLevel9k zsh theme
 # For other Configs/themes
 # https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config
 git clone https://github.com/bhilburn/powerlevel9k.git ~/powerlevel9k
-echo "source  ~/powerlevel9k/powerlevel9k.zsh-theme'" >> ~/.zshrc
+echo "source  ~/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 
-# PowerLevel9k zsh theme
-# For other Configs/themes
-# https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config
-git clone https://github.com/bhilburn/powerlevel9k.git ~/powerlevel9k
+
 cat <<EOT >> ~/.zshrc
 
 # Please only use this battery segment if you have material icons in your nerd font (or font)
@@ -82,7 +81,6 @@ prompt_zsh_battery_level() {
   echo -n "%{$color%}$symbol" ;
 }
 
-echo 'source  ~/powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
@@ -123,15 +121,27 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon custom_internet_signal custom
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status  time)
 HIST_STAMPS="mm/dd/yyyy"
 DISABLE_UPDATE_PROMPT=true
+
 EOT
+
+# powerlevel9k syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+mv ./zsh-syntax-highlighting ~/.
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Font
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+
+# Material deisgn schemes
+https://github.com/MartinSeeler/iterm2-material-design.git
+
+
 
 
 # *****************  Manual extra stuff **************************
 # Iterm Color schemes from
 # https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/README.md#installation-instructions
 # got to manually import them
-git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git .
-
-# DroidSansMono font
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+# git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git .
