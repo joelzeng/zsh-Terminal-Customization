@@ -121,7 +121,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon custom_internet_signal custom
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status  time)
 HIST_STAMPS="mm/dd/yyyy"
 DISABLE_UPDATE_PROMPT=true
-
 EOT
 
 # powerlevel9k syntax highlighting
@@ -135,9 +134,12 @@ brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 
 # Material deisgn schemes
-https://github.com/MartinSeeler/iterm2-material-design.git
+# https://github.com/MartinSeeler/iterm2-material-design.git
 
-
+#Neofetch
+# https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew
+brew install neofetch
+echo 'neofetch' >> ~/.zshrc
 
 
 # *****************  Manual extra stuff **************************
