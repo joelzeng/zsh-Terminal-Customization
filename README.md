@@ -1,4 +1,4 @@
-# CustomizationBackup OSX
+# Development Env installation [OSX]
 Shell scripts helping install my customized dev env.
 
 ![Preview](setup.png)
