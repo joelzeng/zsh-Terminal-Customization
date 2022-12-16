@@ -54,6 +54,12 @@ Reference to copy from
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
+---
+
+Visual Code Support
+
+https://github.com/romkatv/powerlevel10k/issues/671
+
 
 
 
