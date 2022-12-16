@@ -50,9 +50,9 @@ and reload your macOS terminal by relaunching it or run `$ source ~/.zshrc`
 
 Reference to copy from
 
+```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-
+```
 
 
 
