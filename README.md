@@ -38,12 +38,21 @@ Navigate to oh-my-zsh plugins
 
 pick and choose what you need:
 `$ git clone https://github.com/zsh-users/zsh-autosuggestions`
+`$ git clone https://github.com/zsh-users/zsh-syntax-highlighting`
 
 and update `~/.zshrc` on line ~78. Add them at the with the following format: `(git [pluginName] [pluginName] ...)`
 
 <img width="600" alt="Screenshot 2022-12-16 at 1 42 01 AM" src="https://user-images.githubusercontent.com/7378560/208038490-46073fea-def0-413a-b23d-7302c1157eff.png">
 
 and reload your macOS terminal by relaunching it or run `$ source ~/.zshrc`
+
+---
+
+Reference to copy from
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+
 
 
 
